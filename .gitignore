@@ -1,0 +1,7 @@
+*.pdf
+*.psd
+*.ai
+
+
+.vscode/
+*.map
