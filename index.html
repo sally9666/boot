@@ -22,6 +22,57 @@
 </head>
 
 <body>
+    <header id="hd" class="border-bottom fixed-top bg-white ">
+        <div class="bg-dark text-white text-center py-1 d-none d-md-block">7월의 마지막 혜택</div>
+        <div class="container py-3 d-flex justify-content-between align-items-center">
+            <h1><a href="">로고</a></h1>
+            <u1 id="gnb" class="d-md-flex">
+                <li class="px-1"><a href="">대메뉴들</a></li>
+                <li class="px-1"><a href="">대메뉴들</a></li>
+                <li class="px-1"><a href="">대메뉴들</a></li>
+                <li class="px-1"><a href="">대메뉴들</a></li>
+            </u1>
+            <ul class="sns d-md-flex">
+                <li class="px-1"><a href="">깃</a></li>
+                <li class="px-1"><a href="">인스타</a></li>
+
+            </ul>
+
+        </div>
+    </header>
+
+    <div class="swiper myswiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg-danger"></div>
+            <div class="swiper-slide bg-dark"></div>
+            <div class="swiper-slide bg-light"></div>
+            <div class="swiper-slide bg-warning"></div>
+            <div class="swiper-slide bg-success"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".myswiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
     
 
 </body>
